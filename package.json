@@ -1,0 +1,31 @@
+{
+  "name": "fireguard",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c red,yellow \"node --watch server/index.js\" \"vite --config web/vite.config.ts\"",
+    "build": "tsc -p web && vite build --config web/vite.config.ts",
+    "start": "NODE_ENV=production node server/index.js",
+    "fetch:mtg": "node server/mtg.js --download"
+  },
+  "dependencies": {
+    "@turf/turf": "^7.4.0",
+    "dotenv": "^18.0.1",
+    "express": "^5.2.1",
+    "framer-motion": "^13.4.0",
+    "maplibre-gl": "^6.10.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.16",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "concurrently": "^10.0.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  }
+}
