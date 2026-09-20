@@ -1,0 +1,103 @@
+
+> fireguard@1.0.0 dev
+> concurrently -k -n api,web -c red,yellow "node --watch server/index.js" "vite --config web/vite.config.ts"
+
+[api] ◇ injected env (5) from .env
+[api] FireGuard API on :8787  deepfire=demo  mtg=demo
+[web] 
+[web]   VITE v8.3.0  ready in 206 ms
+[web] 
+[web]   ➜  Local:   http://localhost:5173/
+[web]   ➜  Network: use --host to expose
+[api] Restarting 'server/index.js'
+[api] ◇ injected env (5) from .env
+[api] FireGuard API on :8787  deepfire=demo  mtg=demo
+[web] The file does not exist at "/home/usuari/hackbarna/FireGuard/node_modules/.vite/deps/maplibre-gl-worker.mjs" which is in the optimize deps directory. The dependency might be incompatible with the dep optimizer. Try adding it to `optimizeDeps.exclude`.
+[web] The file does not exist at "/home/usuari/hackbarna/FireGuard/node_modules/.vite/deps/maplibre-gl-worker.mjs" which is in the optimize deps directory. The dependency might be incompatible with the dep optimizer. Try adding it to `optimizeDeps.exclude`.
+[web] 18:35:24 [vite] web/vite.config.ts changed, restarting server...
+[web] 18:35:24 [vite] (client) Re-optimizing dependencies because vite config has changed
+[web] 18:35:24 [vite] server restarted.
+[web] 18:35:44 [vite] (client) hmr update /src/map/MapStage.tsx, /src/pages/Cameras.tsx, /src/main.tsx, /src/components/Timeline.tsx, /src/components/FirePanel.tsx, /src/components/Shell.tsx, /src/pages/Pages.tsx, /src/components/Blocks.tsx
+[web] 18:35:44 [vite] (client) hmr update /src/main.tsx
+[web] 18:37:29 [vite] (client) hmr update /src/styles.css
+[web] 18:38:07 [vite] (client) hmr update /src/main.tsx, /src/map/MapStage.tsx, /src/components/Timeline.tsx, /src/components/FirePanel.tsx, /src/components/Shell.tsx, /src/pages/Cameras.tsx, /src/pages/Sources.tsx, /src/pages/Pages.tsx, /src/components/Blocks.tsx
+[web] 18:38:07 [vite] (client) hmr update /src/map/MapStage.tsx
+[web] 18:38:49 [vite] (client) hmr update /src/main.tsx, /src/map/MapStage.tsx, /src/components/Timeline.tsx, /src/components/FirePanel.tsx, /src/components/Shell.tsx, /src/pages/Pages.tsx, /src/components/Blocks.tsx
+[api] Restarting 'server/index.js'
+[api] ◇ injected env (5) from .env
+[api] FireGuard API on :8787  deepfire=demo  mtg=demo
+[web] 18:40:31 [vite] (client) hmr update /src/map/MapStage.tsx
+[web] 18:40:31 [vite] (client) hmr update /src/styles.css
+[web] 18:40:43 [vite] (client) [console.error] Error: layers.mtg.paint.circle-opacity: "zoom" expression may only be used as input to a top-level "step" or "interpolate" expression.
+[web]     at pc (http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl-shared.mjs?v=e91307ce:5:167643)
+[web]     at mc (http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl-shared.mjs?v=e91307ce:5:167722)
+[web]     at Cl._validate (http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl.mjs?v=e91307ce:816:104328)
+[web]     at Cl.addLayer (http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl.mjs?v=e91307ce:816:95250)
+[web]     at Mm.addLayer (http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl.mjs?v=e91307ce:818:171662)
+[web]     at addLayers (http://localhost:5173/src/map/MapStage.tsx?t=1789836031768:318:6)
+[web]     at Mm.<anonymous> (http://localhost:5173/src/map/MapStage.tsx?t=1789836031768:831:4)
+[web]     at Mm.fire (http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl-shared.mjs?v=e91307ce:5:28405)
+[web]     at Mm._render (http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl.mjs?v=e91307ce:818:178811)
+[web]     at http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl.mjs?v=e91307ce:818:180151
+[web] 18:41:07 [vite] (client) [console.error] Error: layers.mtg.paint.circle-opacity: "zoom" expression may only be used as input to a top-level "step" or "interpolate" expression.
+[web]     at pc (http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl-shared.mjs?v=e91307ce:5:167643)
+[web]     at mc (http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl-shared.mjs?v=e91307ce:5:167722)
+[web]     at Cl._validate (http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl.mjs?v=e91307ce:816:104328)
+[web]     at Cl.addLayer (http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl.mjs?v=e91307ce:816:95250)
+[web]     at Mm.addLayer (http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl.mjs?v=e91307ce:818:171662)
+[web]     at addLayers (http://localhost:5173/src/map/MapStage.tsx?t=1789836031768:318:6)
+[web]     at Mm.<anonymous> (http://localhost:5173/src/map/MapStage.tsx?t=1789836031768:831:4)
+[web]     at Mm.fire (http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl-shared.mjs?v=e91307ce:5:28405)
+[web]     at Mm._render (http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl.mjs?v=e91307ce:818:178811)
+[web]     at http://localhost:5173/@fs/home/usuari/hackbarna/FireGuard/node_modules/maplibre-gl/dist/maplibre-gl.mjs?v=e91307ce:818:180151
+[web] 18:41:40 [vite] (client) hmr update /src/map/MapStage.tsx
+[web] 18:43:37 [vite] (client) hmr update /src/pages/Pages.tsx, /src/main.tsx, /src/map/MapStage.tsx, /src/components/Timeline.tsx, /src/components/FirePanel.tsx, /src/components/Shell.tsx, /src/components/Blocks.tsx
+[web] 18:43:37 [vite] (client) hmr update /src/main.tsx, /src/map/MapStage.tsx, /src/components/Timeline.tsx, /src/components/FirePanel.tsx, /src/components/Shell.tsx, /src/pages/Pages.tsx, /src/components/Blocks.tsx
+[web] 18:43:37 [vite] (client) hmr update /src/main.tsx, /src/map/MapStage.tsx, /src/components/Timeline.tsx, /src/components/FirePanel.tsx, /src/components/Shell.tsx, /src/pages/Cameras.tsx, /src/pages/Sources.tsx, /src/pages/Pages.tsx, /src/components/Blocks.tsx
+[web] 18:43:37 [vite] (client) hmr update /src/main.tsx, /src/map/MapStage.tsx, /src/components/Timeline.tsx, /src/components/FirePanel.tsx, /src/components/Shell.tsx, /src/pages/Pages.tsx
+[web] 18:43:37 [vite] (client) hmr update /src/pages/Pages.tsx
+[web] 18:43:46 [vite] (client) hmr update /src/map/MapStage.tsx
+[web] 18:44:41 [vite] (client) hmr update /src/map/MapStage.tsx
+[web] 18:44:41 [vite] (client) hmr update /src/main.tsx, /src/map/MapStage.tsx, /src/components/Timeline.tsx, /src/components/FirePanel.tsx, /src/components/Shell.tsx, /src/pages/Pages.tsx, /src/components/Blocks.tsx
+[web] 18:44:41 [vite] (client) hmr update /src/components/FirePanel.tsx
+[web] 18:45:31 [vite] (client) hmr update /src/main.tsx, /src/map/MapStage.tsx, /src/components/Timeline.tsx, /src/components/FirePanel.tsx, /src/components/Shell.tsx, /src/pages/Pages.tsx
+[web] 18:45:31 [vite] (client) hmr update /src/map/MapStage.tsx, /src/pages/Cameras.tsx, /src/main.tsx, /src/components/Timeline.tsx, /src/components/FirePanel.tsx, /src/components/Shell.tsx, /src/pages/Pages.tsx, /src/components/Blocks.tsx
+[web] 18:45:31 [vite] (client) hmr update /src/main.tsx, /src/map/MapStage.tsx, /src/components/Timeline.tsx, /src/components/FirePanel.tsx, /src/components/Shell.tsx, /src/pages/Pages.tsx, /src/components/Blocks.tsx
+[web] 18:45:31 [vite] (client) hmr update /src/pages/Pages.tsx
+[api] Restarting 'server/index.js'
+[api] ◇ injected env (5) from .env
+[api] FireGuard API on :8787  deepfire=demo  mtg=demo
+[api] Restarting 'server/index.js'
+[api] ◇ injected env (5) from .env
+[api] FireGuard API on :8787  deepfire=demo  mtg=demo
+[web] 19:03:06 [vite] (client) hmr update /src/main.tsx, /src/map/MapStage.tsx, /src/components/Timeline.tsx, /src/components/FirePanel.tsx, /src/components/Shell.tsx, /src/pages/Pages.tsx
+[web] 19:04:23 [vite] (client) hmr update /src/styles.css
+[web] 19:04:23 [vite] (client) hmr update /src/components/Gauge.tsx
+[web] 19:04:23 [vite] (client) hmr update /src/components/AreaChart.tsx
+[web] 19:04:23 [vite] (client) hmr update /src/main.tsx
+[web] 19:04:34 [vite] (client) hmr update /src/components/AreaChart.tsx
+[web] 19:06:20 [vite] (client) hmr update /src/styles.css
+[web] 19:06:20 [vite] (client) hmr update /src/pages/Sources.tsx
+[web] 19:06:20 [vite] (client) hmr update /src/pages/Pages.tsx
+[api] Restarting 'server/index.js'
+[api] ◇ injected env (5) from .env
+[api] FireGuard API on :8787  deepfire=demo  mtg=demo
+[web] 19:06:43 [vite] (client) hmr update /src/pages/Pages.tsx
+[web] 19:07:21 [vite] (client) hmr update /src/styles.css
+[web] 19:08:28 [vite] web/vite.config.ts changed, restarting server...
+[web] 19:08:28 [vite] server restarted.
+[web] 19:17:45 [vite] (client) hmr update /src/components/Shell.tsx
+[web] 19:17:45 [vite] (client) hmr update /src/main.tsx, /src/components/Shell.tsx, /src/components/FirePanel.tsx, /src/components/Timeline.tsx, /src/map/MapStage.tsx, /src/components/DrillFeed.tsx, /src/pages/Cameras.tsx, /src/pages/Pages.tsx, /src/pages/Sources.tsx, /src/components/Blocks.tsx, /src/components/HistoryPlayer.tsx
+[web] 19:17:45 [vite] (client) hmr update /src/map/MapStage.tsx
+[web] 19:17:45 [vite] (client) hmr update /src/styles.css
+[web] 19:17:45 [vite] (client) hmr invalidate /src/components/Shell.tsx Could not Fast Refresh ("useClock" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[web] 19:17:45 [vite] (client) hmr update /src/main.tsx, /src/pages/Pages.tsx
+[web] 19:17:45 [vite] (client) [console.error] You are calling ReactDOMClient.createRoot() on a container that has already been passed to createRoot() before. Instead, call root.render() on the existing root instead if you want to update it.
+[web] 19:17:45 [vite] (client) hmr invalidate /src/main.tsx Could not Fast Refresh ("true" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[web] 19:17:45 [vite] (client) page reload src/main.tsx
+[web] 19:17:45 [vite] (client) hmr invalidate /src/components/Blocks.tsx Could not Fast Refresh ("KIND_COLOR" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[web] 19:17:45 [vite] (client) hmr update /src/components/FirePanel.tsx, /src/pages/Pages.tsx
+[web] 19:17:45 [vite] (client) [console.error] You are calling ReactDOMClient.createRoot() on a container that has already been passed to createRoot() before. Instead, call root.render() on the existing root instead if you want to update it.
+[web] 19:17:45 [vite] (client) hmr invalidate /src/main.tsx Could not Fast Refresh ("true" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[web] 19:17:45 [vite] (client) page reload src/main.tsx
+[web] 19:18:41 [vite] (client) hmr update /src/map/MapStage.tsx
